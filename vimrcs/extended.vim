@@ -218,7 +218,7 @@ elseif &filetype == 'sh'
 elseif &filetype == 'python'
     exec "!time python %"
 elseif &filetype == 'html'
-    exec "!google-chrome % &"
+    exec "!firefox % &"
 elseif &filetype == 'go'
     exec "!go build %<"
     exec "!time go run %"

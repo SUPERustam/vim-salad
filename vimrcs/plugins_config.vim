@@ -153,14 +153,14 @@ nnoremap <silent> <leader>z :Goyo<cr>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:ale_linters = {
 \   'javascript': ['eslint'],
-\   'python': ['flake8', 'mypy', 'pylint'],
+\   'python': ['mypy', 'pylint'],
 \   'go': ['go', 'golint', 'errcheck'],
 \   'cpp': ['gcc', 'cppcheck']
 \}
 
 
 let g:ale_fixers = {
-\   'python': ['autoimport', 'isort', 'autopep8'],
+\   'python': ['autoflake', 'isort', 'autopep8'],
 \   'cpp': ['uncrustify']
 \}
 
@@ -172,8 +172,6 @@ let g:ale_set_highlights = 0
 " Only run linting when saving the file
 let g:ale_lint_on_text_changed = 'never'
 let g:ale_lint_on_enter = 0
-
-let g:ale_fix_on_save = 1
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Git gutter (Git diff)
